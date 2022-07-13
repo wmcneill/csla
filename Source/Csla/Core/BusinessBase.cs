@@ -38,7 +38,7 @@ namespace Csla.Core
   [System.Diagnostics.DebuggerStepThrough]
 #endif
   [Serializable]
-  public abstract class BusinessBase : UndoableBase,
+  public abstract partial class BusinessBase : UndoableBase,
     IEditableBusinessObject,
     IEditableObject,
     ICloneable,
@@ -863,6 +863,7 @@ namespace Csla.Core
     /// </remarks>
     public void BeginEdit()
     {
+      SetEdits();
       CopyState(this.EditLevel + 1);
     }
 
@@ -877,6 +878,7 @@ namespace Csla.Core
     /// </remarks>
     public void CancelEdit()
     {
+      UndoEdits();
       UndoChanges(this.EditLevel - 1);
     }
 
@@ -906,6 +908,7 @@ namespace Csla.Core
     /// </remarks>
     public void ApplyEdit()
     {
+      GetEdits();
       _neverCommitted = false;
       AcceptChanges(this.EditLevel - 1);
       //Next line moved to IEditableObject.ApplyEdit 
