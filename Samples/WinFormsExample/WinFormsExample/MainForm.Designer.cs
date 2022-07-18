@@ -36,9 +36,10 @@
       // loginButton
       // 
       this.loginButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-      this.loginButton.Location = new System.Drawing.Point(699, 12);
+      this.loginButton.Location = new System.Drawing.Point(489, 7);
+      this.loginButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.loginButton.Name = "loginButton";
-      this.loginButton.Size = new System.Drawing.Size(196, 34);
+      this.loginButton.Size = new System.Drawing.Size(137, 23);
       this.loginButton.TabIndex = 0;
       this.loginButton.Text = "Login";
       this.loginButton.UseVisualStyleBackColor = true;
@@ -49,16 +50,18 @@
       this.contentPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-      this.contentPanel.Location = new System.Drawing.Point(1, 56);
+      this.contentPanel.Location = new System.Drawing.Point(1, 34);
+      this.contentPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.contentPanel.Name = "contentPanel";
-      this.contentPanel.Size = new System.Drawing.Size(904, 512);
+      this.contentPanel.Size = new System.Drawing.Size(633, 307);
       this.contentPanel.TabIndex = 1;
       // 
       // homeButton
       // 
-      this.homeButton.Location = new System.Drawing.Point(12, 12);
+      this.homeButton.Location = new System.Drawing.Point(8, 7);
+      this.homeButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.homeButton.Name = "homeButton";
-      this.homeButton.Size = new System.Drawing.Size(112, 34);
+      this.homeButton.Size = new System.Drawing.Size(78, 23);
       this.homeButton.TabIndex = 0;
       this.homeButton.Text = "Home";
       this.homeButton.UseVisualStyleBackColor = true;
@@ -66,12 +69,13 @@
       // 
       // MainForm
       // 
-      this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+      this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(909, 571);
+      this.ClientSize = new System.Drawing.Size(636, 343);
       this.Controls.Add(this.homeButton);
       this.Controls.Add(this.contentPanel);
       this.Controls.Add(this.loginButton);
+      this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.Name = "MainForm";
       this.Text = "WinFormsExample";
       this.ResumeLayout(false);
