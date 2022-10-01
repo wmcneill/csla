@@ -28,6 +28,18 @@ namespace ProjectTracker.Library.Security
     public static bool Login(string username, string password)
     {
       throw new NotSupportedException(nameof(Login));
+      //try
+      //{
+      //  var credentials = DataPortal.Create<Credentials>(username, password);
+      //  var validator = DataPortal.Fetch<CredentialValidator>(credentials);
+      //  var principal = validator.GetPrincipal();
+      //  ApplicationContext.User = principal;
+      //  NewUser?.Invoke();
+      //}
+      //catch
+      //{
+      //  Logout();
+      //}
     }
 
     public static void Logout()

@@ -1,10 +1,7 @@
-using Csla;
-using Csla.Data;
-using Csla.Security;
 using System;
-using Csla.Serialization;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Csla;
 using ProjectTracker.Dal;
 
 namespace ProjectTracker.Library
